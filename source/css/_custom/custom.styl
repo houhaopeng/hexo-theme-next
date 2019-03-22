@@ -29,19 +29,6 @@ body{
     //opacity: 0.8;
 }
 
-.post {
-   margin-top: 0px;
-   margin-bottom: 60px;
-   padding: 25px;
-   -webkit-box-shadow:0px 0px 6px rgba(202, 203, 203, .5);
-   -moz-box-shadow: 2px 2px 5px rgba(202, 203, 204, .5);
-}
-
-.posts-expand .post {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
 header{ width: 75% !important; }
 header.post-header {
   width: auto !important;
@@ -76,10 +63,61 @@ header.post-header {
   }
 }
 
-.post-block {
-  padding: $content-desktop-padding;
 
-  background: rgba(255,255,255,0.7);
-  box-shadow: $box-shadow-inner;
-  border-radius: $border-radius-inner;
+// 站点名字体
+.site-title {
+    font-size: 75px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    line-height: 80px;
+    letter-spacing: 3px;
+}
+// 站点子标题
+.site-subtitle{
+    margin: 5px;
+    font-size: 15px;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 25);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: white
+}
+
+// 文章
+.post {
+    margin-bottom: 50px;
+    padding: 20px 36px 36px 36px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+}
+// 文章标题字体
+.posts-expand .post-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+// 文章元数据（meta）留白更改
+.posts-expand .post-meta {
+    margin: 10px 10px 20px 0px;
+}
+// 文章的描述description
+.posts-expand .post-meta .post-description {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #666;
+}
+
+// 去除在页面文章之间的分割线
+.posts-expand .post-eof {
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+// 去除页面底部页码上面的横线
+.pagination {
+    border: none;
+    margin: 0px;
 }
