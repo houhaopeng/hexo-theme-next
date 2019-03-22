@@ -1,1 +1,85 @@
 // Custom styles.
+.site-meta {
+  background: $blue; //修改为自己喜欢的颜色
+}
+@font-face {
+    font-family: Zitiming;
+    src: url('/fonts/Zitiming.ttf');
+}
+.site-title {
+    font-size: 30px !important;
+	font-family: 'Zitiming' !important;
+}
+
+body{
+    background:url(/images/bg.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+.header-inner{
+	//opacity: 0.8;
+}
+.main-inner { 
+   // margin-top: 60px;
+   // padding: 60px 60px 60px 60px;
+
+    //opacity: 0.8;
+}
+
+.post {
+   margin-top: 0px;
+   margin-bottom: 60px;
+   padding: 25px;
+   -webkit-box-shadow:0px 0px 6px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 2px 2px 5px rgba(202, 203, 204, .5);
+}
+
+.posts-expand .post {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+header{ width: 75% !important; }
+header.post-header {
+  width: auto !important;
+}
+.container .main-inner { width: 75%; }
+.content-wrap { width: calc(100% - 260px); }
+
+.header {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+
+.container .main-inner {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+
+.content-wrap {
+  +tablet() {
+    width: 100% !important;
+  }
+  +mobile() {
+    width: 100% !important;
+  }
+}
+
+.post-block {
+  padding: $content-desktop-padding;
+
+  background: rgba(255,255,255,0.7);
+  box-shadow: $box-shadow-inner;
+  border-radius: $border-radius-inner;
+}
